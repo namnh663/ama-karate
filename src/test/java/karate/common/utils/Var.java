@@ -11,7 +11,7 @@ public class Var {
 	public String webhook = "https://mywebhookurl.com";
 	public String oauthUrl = "https://myurl.com/oauth/token";
 	public String qcInitTokenUrl = "https://qc.bcs.amanotes.net/v4/init";
-	public String stagInitTokenUrl = "https://qc.bcs.amanotes.net/v4/init";
+	public String stagInitTokenUrl = "https://staging.bcs.amanotes.net/v4/init";
 	public String backlogBcsUrl = "<https://myurl.com/backlog";
 	public String formatMessageFile = "src/test/java/karate/common/files/header-slack.json";
 	public String requestCmsTokenFile = "src/test/java/karate/common/files/request-cms-token.json";
