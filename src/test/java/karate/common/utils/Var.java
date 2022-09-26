@@ -8,7 +8,7 @@ public class Var {
 	public String accessKey = "inputkey";
 	public String secretKey = "inputkey";
 	public String region = "us-east-1";
-	public String webhook = "https://hooks.slack.com/services/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";
+	public String webhook = "https://mywebhookurl.com";
 	public String oauthUrl = "https://amanotes.auth0.com/oauth/token";
 	public String qcInitTokenUrl = "https://qc.bcs.amanotes.net/v4/init";
 	public String stagInitTokenUrl = "https://qc.bcs.amanotes.net/v4/init";
