@@ -9,7 +9,7 @@ public class Var {
 	public String secretKey = "inputkey";
 	public String region = "us-east-1";
 	public String webhook = "https://mywebhookurl.com";
-	public String oauthUrl = "https://amanotes.auth0.com/oauth/token";
+	public String oauthUrl = "https://myurl.com/oauth/token";
 	public String qcInitTokenUrl = "https://qc.bcs.amanotes.net/v4/init";
 	public String stagInitTokenUrl = "https://qc.bcs.amanotes.net/v4/init";
 	public String backlogBcsUrl = "<https://myurl.com/backlog";
