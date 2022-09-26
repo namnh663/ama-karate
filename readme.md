@@ -26,7 +26,7 @@ It is worth pointing out that JSON is a **first class citizen** of the syntax su
 And you don't need to create additional Java classes for any of the payloads that you need to work with.
 
 ### Index
-Start | [IDE](#user-content-ide-support) / [Project](#user-content-project) / [Folder Structure](#user-content-folder-structure) / [Run](#user-content-run-with-command-line) |
+Start | [IDE](#user-content-ide-support) / [Project](#user-content-project) / [Folder Structure](#user-content-folder-structure) / [Run](#user-content-run-with-command-line) / [Configuration](#user-content-configuration) |
 ----- | --- |
 More  | [karatelabs](https://github.com/karatelabs/karate) / [karate ui testing](https://karatelabs.github.io/karate/karate-core/) |
 
@@ -44,6 +44,7 @@ Refer to the [wiki](https://github.com/intuit/karate/wiki/IDE-Support)
 ### Project
 - Maven 3.8.6
 - Java 18.0.2.1
+- AWS SDK
 - SmartGit (optional)
 
 ### Folder Structure
@@ -133,4 +134,16 @@ function fn() {
 	
 	return config;
 }
+```
+
+### Post Messages To Slack Channel
+
+```
+WebHooks slack = new WebHooks();
+
+// For the case of only text
+slack.postMessage("my message");
+
+// For the case of diverse content
+slack.postMessages(<input json file>);
 ```
