@@ -60,9 +60,11 @@ src/
 │  │  │  ├─ bcs/
 │  │  │  │  ├─ song/
 │  │  │  │  ├─ data/
-│  │  │  │  ├─ BCSRunner.java
+│  │  │  │  ├─ file/
 │  │  │  │  ├─ artist/
+│  │  │  │  ├─ BCSRunner.java
 │  │  │  ├─ common/
+│  │  ├─ karate-config.js
 target
 ```
 
@@ -78,6 +80,7 @@ Folder   | File           | Description
 | artist |                | subfolder of bcs, in this folder will contain scripts related to artist
 |        | BCSRunner.java | runner file to execute the scripts you created
 | common |                | this folder refers to core files in a large project that must be built for general use in all conditions
+| target |                | folder containing report files
 
 ### Setting & Using Variables
 ```
