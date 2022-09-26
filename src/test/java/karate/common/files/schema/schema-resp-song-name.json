@@ -1,0 +1,171 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome2",
+    "definitions": {
+        "Welcome2": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "total": {
+                    "type": "integer"
+                },
+                "paging": {
+                    "$ref": "#/definitions/Paging"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Datum"
+                    }
+                }
+            },
+            "required": [
+                "data",
+                "paging",
+                "total"
+            ],
+            "title": "Welcome2"
+        },
+        "Datum": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "song_name": {
+                    "$ref": "#/definitions/SongName"
+                },
+                "file_type": {
+                    "type": "string"
+                },
+                "thumbnail_url": {
+                    "type": "string"
+                },
+                "artists": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Artist"
+                    }
+                },
+                "genres": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "disable_offline_cache": {
+                    "type": "boolean"
+                },
+                "contents": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "artists",
+                "contents",
+                "disable_offline_cache",
+                "file_type",
+                "genres",
+                "id",
+                "name",
+                "song_name",
+                "thumbnail_url"
+            ],
+            "title": "Datum"
+        },
+        "Artist": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "romanized_name": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "contents": {
+                    "type": "array",
+                    "items": {}
+                },
+                "genres": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "spotifyPopularity": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "contents",
+                "genres",
+                "id",
+                "name",
+                "romanized_name",
+                "spotifyPopularity"
+            ],
+            "title": "Artist"
+        },
+        "SongName": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "romanized_name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "romanized_name"
+            ],
+            "title": "SongName"
+        },
+        "Paging": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cursors": {
+                    "$ref": "#/definitions/Cursors"
+                }
+            },
+            "required": [
+                "cursors"
+            ],
+            "title": "Paging"
+        },
+        "Cursors": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "after": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "after"
+            ],
+            "title": "Cursors"
+        }
+    }
+}

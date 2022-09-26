@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome5",
+    "definitions": {
+        "Welcome5": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "total": {
+                    "type": "integer"
+                },
+                "paging": {
+                    "$ref": "#/definitions/Paging"
+                },
+                "data": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "data",
+                "paging",
+                "total"
+            ],
+            "title": "Welcome5"
+        },
+        "Paging": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cursors": {
+                    "$ref": "#/definitions/Cursors"
+                }
+            },
+            "required": [
+                "cursors"
+            ],
+            "title": "Paging"
+        },
+        "Cursors": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "after": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "after"
+            ],
+            "title": "Cursors"
+        }
+    }
+}

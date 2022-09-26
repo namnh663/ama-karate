@@ -1,0 +1,6 @@
+{
+    "client_id": "JwNFfp4794NMIGASE5cJ46QRNFXob5ra",
+    "client_secret": "jni4Knep5qXAzYEQsHAt9Ufv4NamZBrIsYS9M-SZ5OC9roZ6WxNNkBIWWpFppAwi",
+    "grant_type": "client_credentials",
+    "audience": "https://amanotes.auth0.com/api/v2/"
+}

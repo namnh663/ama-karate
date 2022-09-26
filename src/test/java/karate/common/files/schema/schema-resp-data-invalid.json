@@ -1,0 +1,60 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "error"
+    ],
+    "properties": {
+        "error": {
+            "type": "object",
+            "default": {},
+            "title": "The error Schema",
+            "required": [
+                "code",
+                "message",
+                "detail"
+            ],
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The code Schema",
+                    "examples": [
+                        1010
+                    ]
+                },
+                "message": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The message Schema",
+                    "examples": [
+                        "Song id input is invalid, Please check your input."
+                    ]
+                },
+                "detail": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The detail Schema",
+                    "examples": [
+                        "Song id is not suitable app or not found -  "
+                    ]
+                }
+            },
+            "examples": [{
+                "code": 1010,
+                "message": "Song id input is invalid, Please check your input.",
+                "detail": "Song id is not suitable app or not found -  "
+            }]
+        }
+    },
+    "examples": [{
+        "error": {
+            "code": 1010,
+            "message": "Song id input is invalid, Please check your input.",
+            "detail": "Song id is not suitable app or not found -  "
+        }
+    }]
+}

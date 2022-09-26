@@ -1,0 +1,32 @@
+{
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "BCS Services",
+				"emoji": true
+			}
+		},
+		{
+			"type": "context",
+			"elements": [
+				{
+					"type": "plain_text",
+					"text": "Template by nam.nh@amanotes.com | Music Tech | QA/QC",
+					"emoji": true
+				}
+			]
+		},
+		{
+			"type": "context",
+			"elements": [
+				{
+					"type": "plain_text",
+					"text": ":loudspeaker: please report issue to: hai.dothanh@amanotes.com, if the API failed",
+					"emoji": true
+				}
+			]
+		}
+	]
+}

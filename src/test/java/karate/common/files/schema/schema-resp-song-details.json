@@ -1,0 +1,141 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome6",
+    "definitions": {
+        "Welcome6": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "song_name": {
+                    "$ref": "#/definitions/SongName"
+                },
+                "disable_offline_cache": {
+                    "type": "boolean"
+                },
+                "artists": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Artist"
+                    }
+                },
+                "genres": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "contents": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Content"
+                    }
+                }
+            },
+            "required": [
+                "artists",
+                "contents",
+                "disable_offline_cache",
+                "genres",
+                "id",
+                "name",
+                "song_name"
+            ],
+            "title": "Welcome6"
+        },
+        "Artist": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "romanized_name": {
+                    "type": "string"
+                },
+                "contents": {
+                    "type": "array",
+                    "items": {}
+                },
+                "genres": {
+                    "type": "array",
+                    "items": {}
+                },
+                "spotifyPopularity": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "contents",
+                "genres",
+                "id",
+                "name",
+                "romanized_name",
+                "spotifyPopularity"
+            ],
+            "title": "Artist"
+        },
+        "Content": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "content_url": {
+                    "type": "string"
+                },
+                "file_type": {
+                    "type": "string"
+                },
+                "content_type": {
+                    "type": "string"
+                },
+                "slot_id": {
+                    "type": "string",
+                    "format": "uuid"
+                }
+            },
+            "required": [
+                "content_type",
+                "content_url",
+                "file_type",
+                "id",
+                "name",
+                "slot_id"
+            ],
+            "title": "Content"
+        },
+        "SongName": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "romanized_name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "romanized_name"
+            ],
+            "title": "SongName"
+        }
+    }
+}
