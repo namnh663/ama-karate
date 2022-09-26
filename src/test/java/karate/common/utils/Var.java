@@ -3,16 +3,16 @@ package karate.common.utils;
 public class Var {
 	
 	public String s3Path = "qc/automation-report/";
-	public String baseCdnUrl = "<https://automation-report.amanotes.dev/";
-	public String bucketName = "amanotescontentstorage";
-	public String accessKey = "AKIA5YELWPAIEM7NK2ZN";
-	public String secretKey = "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";
+	public String baseCdnUrl = "<https://mycdnurl.com/";
+	public String bucketName = "inputbucketname";
+	public String accessKey = "inputkey";
+	public String secretKey = "inputkey";
 	public String region = "us-east-1";
 	public String webhook = "https://hooks.slack.com/services/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";
 	public String oauthUrl = "https://amanotes.auth0.com/oauth/token";
 	public String qcInitTokenUrl = "https://qc.bcs.amanotes.net/v4/init";
 	public String stagInitTokenUrl = "https://qc.bcs.amanotes.net/v4/init";
-	public String backlogBcsUrl = "<https://amanotesjsc.atlassian.net/jira/software/projects/MPL/boards/419/backlog";
+	public String backlogBcsUrl = "<https://myurl.com/backlog";
 	public String formatMessageFile = "src/test/java/karate/common/files/header-slack.json";
 	public String requestCmsTokenFile = "src/test/java/karate/common/files/request-cms-token.json";
 	public String requestBcsQcTokenFile = "src/test/java/karate/common/files/request-bcs-qc-token.json";
