@@ -1,7 +1,3 @@
-// cmsTestEnvUrl: 'https://ms.qc.amanotes.io'
-// bcsTestEnvUrl: 'https://qc.bcs.amanotes.net'
-// var systemVar = java.lang.System.getenv(env);
-
 function fn() {
 	var env = karate.env
 
@@ -14,18 +10,15 @@ function fn() {
 		bcs_endpoint_token_refresh: '/v4/refresh',
 		bcs_endpoint_license: '/v4/license',
 
-		cms: 'https://ms.env.amanotes.io',
-		baseUrl: 'https://env.bcs.amanotes.net'
+		baseUrl: 'https://env.bcs.net'
 	}
 
 	if (env == 'qc') {
-		config.baseUrl = 'https://qc.bcs.amanotes.net'
-		config.cms = 'https://ms.qc.amanotes.io'
+		config.baseUrl = 'https://qc.bcs.net'
 	}
 
 	if (env == 'stag') {
-		config.baseUrl = 'https://staging.bcs.amanotes.net'
-		config.cms = 'https://ms.staging.amanotes.io'
+		config.baseUrl = 'https://staging.bcs.net'
 	}
 	
 	return config;
