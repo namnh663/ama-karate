@@ -32,7 +32,6 @@ Then status 200
 * def jsonMusicGenres = read('classpath:karate/bcs/file/music-genres.json')
 
 * def token = CMSToken.Get()
-* def tempToken = BCSToken.GetTokenInQc()
 
 * def tempToken = env == 'qc' ? BCSToken.GetTokenInQc() : env == 'stag' ? BCSToken.GetTokenInStag() : {}
 * def appName = env == 'qc' ? BCSToken.GetAppNameInQc() : env == 'stag' ? BCSToken.GetAppNameInStag() : {}
