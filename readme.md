@@ -25,6 +25,9 @@ It is worth pointing out that JSON is a **first class citizen** of the syntax su
 
 And you don't need to create additional Java classes for any of the payloads that you need to work with.
 
+### For UI Testing
+I use another project [SwagLabs](https://github.com/namnh663/swaglabs-ui-karate)
+
 ### Index
 Start | [IDE](#user-content-ide-support) / [Project](#user-content-project) / [Folder Structure](#user-content-folder-structure) / [Run](#user-content-run-with-command-line) / [Configuration](#user-content-configuration) |
 ----- | --- |
